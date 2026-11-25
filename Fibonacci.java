@@ -1,7 +1,8 @@
 public class Fibonacci {
     public static void main(String[] args) {
 
-        int first = 0, second = 1;
+        BigInteger first = BigInteger.ZERO;
+        BigInteger second = BigInteger.ONE;
 
         System.out.println("First 100 numbers of the Fibonacci sequence:");
 
@@ -9,7 +10,7 @@ public class Fibonacci {
 
             System.out.print(first + " ");
 
-            int next = first + second;
+            BigInteger next = first.add(second);
             first = second;
             second = next;
         }
